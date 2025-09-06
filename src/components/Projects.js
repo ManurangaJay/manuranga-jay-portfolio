@@ -39,11 +39,11 @@ const Projects = () => {
         "GitHub",
         "Full Stack",
       ],
+      liveUrl: null,
+      githubUrl: "#",
     },
     {
       id: 3,
-      liveUrl: null,
-      githubUrl: "#",
       title: "Automated Image Captioning System",
       description:
         "Developed and evaluated two deep-learning models (VGG16-LSTM and ResNet50-Transformer) for generating captions from images. Trained on 8,091 images with human-generated captions, achieving superior performance with VGG16-LSTM architecture.",
