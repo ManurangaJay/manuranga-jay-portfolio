@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Manuranga Jay - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and Tailwind CSS, featuring a clean design with dark mode support.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, professional layout with smooth animations
+- **Dark Mode**: Toggle between light and dark themes with persistent preference
+- **Responsive**: Fully responsive design that works on all devices
+- **Smooth Scrolling**: Smooth navigation between sections
+- **Interactive Elements**: Hover effects and transitions throughout
+- **Professional Sections**:
+  - Hero section with introduction
+  - About me with personal story
+  - Skills showcase with categorized technologies
+  - Projects portfolio with live demos and GitHub links
+  - Experience timeline
+  - Contact information with social links
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 19.1.1
+- **Styling**: Tailwind CSS 4.1.13
+- **Icons**: React Icons
+- **Font**: Inter (Google Fonts)
+- **Build Tool**: Create React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎨 Design System
 
-### `npm test`
+### Color Palette
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Light Mode**:
 
-### `npm run build`
+  - Background: `bg-slate-50` (#F8FAFC)
+  - Text: `text-slate-900` (#0F172A)
+  - Primary: `bg-blue-500` (#3B82F6)
+  - Borders: `border-slate-200` (#E2E8F0)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Dark Mode**:
+  - Background: `bg-slate-900` (#0F172A)
+  - Text: `text-slate-200` (#E2E8F0)
+  - Primary: `bg-blue-400` (#60A5FA)
+  - Borders: `border-slate-700` (#334155)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Typography
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Font Family**: Inter (Google Fonts)
+- **Weights**: 300, 400, 500, 600, 700
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/your-username/manuranga-jay-portfolio.git
+cd manuranga-jay-portfolio
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+3. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Code Splitting
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Netlify (Recommended)
 
-### Analyzing the Bundle Size
+1. Build the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run build
+```
 
-### Making a Progressive Web App
+2. Deploy to Netlify:
+   - Connect your GitHub repository to Netlify
+   - Set build command: `npm run build`
+   - Set publish directory: `build`
+   - Deploy!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Other Platforms
 
-### Advanced Configuration
+The project can be deployed to any platform that supports static sites:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Vercel
+- GitHub Pages
+- AWS S3 + CloudFront
+- Firebase Hosting
 
-### Deployment
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The portfolio is fully responsive and optimized for:
 
-### `npm run build` fails to minify
+- **Mobile**: 320px - 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: 1024px+
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎯 Customization
+
+To customize this portfolio for your own use:
+
+1. **Personal Information**: Update the content in each component file
+2. **Projects**: Modify the projects array in `Projects.js`
+3. **Skills**: Update the skills in `Skills.js`
+4. **Experience**: Edit the experience data in `Experience.js`
+5. **Contact**: Update contact information in `Contact.js`
+6. **Styling**: Modify colors and styles in the Tailwind classes
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/manuranga-jay-portfolio/issues).
+
+## 📞 Contact
+
+Manuranga Jay - [@manuranga_jay](https://twitter.com/manuranga_jay) - manuranga.jay@email.com
+
+Project Link: [https://github.com/your-username/manuranga-jay-portfolio](https://github.com/your-username/manuranga-jay-portfolio)
