@@ -23,7 +23,8 @@ const Projects = () => {
         "Tailwind CSS",
       ],
       liveUrl: null,
-      githubUrl: "#",
+      backendUrl: "https://github.com/ManurangaJay/bidflare-backend",
+      frontendUrl: "https://github.com/ManurangaJay/bidflare-frontend",
     },
     {
       id: 2,
@@ -40,7 +41,7 @@ const Projects = () => {
         "Full Stack",
       ],
       liveUrl: null,
-      githubUrl: "#",
+      githubUrl: "https://github.com/ManurangaJay/Student-Log",
     },
     {
       id: 3,
@@ -96,7 +97,7 @@ const Projects = () => {
         "Full Stack",
       ],
       liveUrl: null,
-      githubUrl: "#",
+      githubUrl: "https://github.com/ManurangaJay/CinemaSphere",
     },
     {
       id: 6,
@@ -117,7 +118,7 @@ const Projects = () => {
         "Figma",
       ],
       liveUrl: null,
-      githubUrl: "#",
+      githubUrl: "https://github.com/ManurangaJay/ExamHallBookingSystem",
     },
     {
       id: 7,
@@ -134,7 +135,7 @@ const Projects = () => {
         "Web3.js",
       ],
       liveUrl: null,
-      githubUrl: "#",
+      githubUrl: "https://github.com/ManurangaJay/Vehicle-History-Dapp",
     },
   ];
 
@@ -193,13 +194,43 @@ const Projects = () => {
                       <span>Live Demo</span>
                     </a>
                   )}
-                  <a
-                    href={project.githubUrl}
-                    className="flex items-center space-x-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-medium"
-                  >
-                    <FaGithub size={16} />
-                    <span>GitHub</span>
-                  </a>
+
+                  {/* Show separate Backend and Frontend links if both exist */}
+                  {project.backendUrl && project.frontendUrl ? (
+                    <>
+                      <a
+                        href={project.backendUrl}
+                        className="flex items-center space-x-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-medium"
+                      >
+                        <FaGithub size={16} />
+                        <span>Backend</span>
+                      </a>
+                      <a
+                        href={project.frontendUrl}
+                        className="flex items-center space-x-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-medium"
+                      >
+                        <FaGithub size={16} />
+                        <span>Frontend</span>
+                      </a>
+                    </>
+                  ) : (
+                    /* Show single GitHub link if only one exists */
+                    (project.githubUrl ||
+                      project.backendUrl ||
+                      project.frontendUrl) && (
+                      <a
+                        href={
+                          project.githubUrl ||
+                          project.backendUrl ||
+                          project.frontendUrl
+                        }
+                        className="flex items-center space-x-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-medium"
+                      >
+                        <FaGithub size={16} />
+                        <span>GitHub</span>
+                      </a>
+                    )
+                  )}
                 </div>
               </div>
             </div>
