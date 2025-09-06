@@ -6,19 +6,19 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: FaGithub,
-      url: "https://github.com/manuranga-jay",
+      url: "https://github.com/ManurangaJay",
       color: "hover:text-gray-800 dark:hover:text-gray-200",
     },
     {
       name: "LinkedIn",
       icon: FaLinkedin,
-      url: "https://linkedin.com/in/manuranga-jay",
+      url: "https://linkedin.com/in/manuranga-jayawardhana-761288229",
       color: "hover:text-blue-600",
     },
     {
       name: "Twitter",
       icon: FaTwitter,
-      url: "https://twitter.com/manuranga_jay",
+      url: "https://twitter.com/Manu_Ranga_Jay",
       color: "hover:text-blue-400",
     },
   ];
