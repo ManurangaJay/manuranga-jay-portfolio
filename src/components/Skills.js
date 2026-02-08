@@ -45,7 +45,7 @@ const Skills = () => {
         {
           name: "Next.js",
           icon: SiNextdotjs,
-          color: "text-gray-800 dark:text-gray-200",
+          color: "text-slate-900 dark:text-slate-100",
         },
         { name: "Redux", icon: SiRedux, color: "text-purple-500" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
@@ -78,7 +78,7 @@ const Skills = () => {
         {
           name: "GitHub",
           icon: FaGithub,
-          color: "text-gray-800 dark:text-gray-200",
+          color: "text-slate-900 dark:text-slate-100",
         },
         { name: "GitLab", icon: SiGitlab, color: "text-orange-500" },
         { name: "Docker", icon: FaDocker, color: "text-blue-500" },
@@ -102,36 +102,36 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-50 dark:bg-slate-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-200 mb-4">
-            My Skills
+          <span className="text-blue-600 dark:text-blue-400 font-semibold tracking-wider uppercase">
+            Expertise
+          </span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-200">
+            My Skills & Technologies
           </h2>
-          <div className="w-24 h-1 bg-blue-500 dark:bg-blue-400 mx-auto"></div>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-6 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div className="flex flex-col space-y-12">
           {skillCategories.map((category, categoryIndex) => (
-            <div
-              key={categoryIndex}
-              className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-200 mb-6 text-center">
+            <div key={categoryIndex} className="space-y-6">
+              <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 border-l-4 border-blue-500 pl-4">
                 {category.title}
               </h3>
-              <div className="space-y-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="flex items-center space-x-3 group"
+                    className="group bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm hover:shadow-md border border-slate-100 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-800 transition-all duration-300 flex flex-col items-center justify-center gap-3 hover:-translate-y-1"
                   >
                     <div
-                      className={`${skill.color} group-hover:scale-110 transition-transform duration-200`}
+                      className={`${skill.color} text-3xl p-3 rounded-lg bg-slate-50 dark:bg-slate-700/50 group-hover:bg-white dark:group-hover:bg-slate-800 transition-colors duration-300`}
                     >
-                      <skill.icon size={24} />
+                      <skill.icon />
                     </div>
-                    <span className="text-slate-700 dark:text-slate-300 font-medium group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                    <span className="text-slate-600 dark:text-slate-300 font-medium text-sm text-center group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {skill.name}
                     </span>
                   </div>
