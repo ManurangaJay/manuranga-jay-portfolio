@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm font-medium">
-            &copy; {new Date().getFullYear()} <span className="text-slate-900 dark:text-slate-200">Manuranga Jay</span>. All rights reserved.
+            &copy; {new Date().getFullYear()} <span className="text-slate-900 dark:text-slate-200">Manuranga Jayawardhana</span>. All rights reserved.
           </div>
 
           <div className="flex items-center space-x-2 text-sm">
             <span>Designed & Built with</span>
             <FaHeart className="text-red-500 animate-pulse" size={12} />
-            <span>by Manuranga Jay</span>
+            <span>by Manuranga Jayawardhana</span>
           </div>
         </div>
       </div>

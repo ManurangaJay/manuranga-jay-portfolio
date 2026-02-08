@@ -85,10 +85,6 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <FaArrowDown
-            className="text-slate-400 dark:text-slate-500 opacity-50"
-            size={24}
-          />
         </div>
       </div>
     </section>
