@@ -1,5 +1,4 @@
-import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaPaperPlane } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   const socialLinks = [
