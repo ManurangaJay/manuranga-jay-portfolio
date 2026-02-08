@@ -95,7 +95,7 @@ const Navbar = () => {
 
             {/* Resume Button */}
             <a
-              href="/D.D.V.M Jayawardhana - CV.pdf"
+              href="/Manuranga_Jayawardhana - Resume.pdf"
               download="Manuranga_Jayawardhana_Resume.pdf"
               className="bg-blue-500 hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center space-x-2"
             >
