@@ -26,7 +26,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <section
+      id="contact"
+      className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-12">
           <span className="text-blue-600 dark:text-blue-400 font-semibold tracking-wider uppercase">
@@ -37,8 +40,8 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-6 rounded-full"></div>
           <p className="mt-8 text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            My inbox is always open. Whether you have a question, a project idea, or just want to
-            say hi, I'll try my best to get back to you!
+            My inbox is always open. Whether you have a question, a project
+            idea, or just want to say hi, I'll try my best to get back to you!
           </p>
         </div>
 
@@ -54,9 +57,9 @@ const Contact = () => {
               <span>Say Hello</span>
             </a>
           </div>
-          
+
           <p className="text-slate-500 dark:text-slate-400 font-medium">
-            manurangajayawardhana.jay@email.com
+            manurangajayawardhana@email.com
           </p>
 
           {/* Social Links */}
@@ -77,9 +80,9 @@ const Contact = () => {
 
           {/* Footer Note */}
           <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
-             <p className="text-slate-600 dark:text-slate-300 text-sm">
+            <p className="text-slate-600 dark:text-slate-300 text-sm">
               I'm always interested in new opportunities and exciting projects.
-             </p>
+            </p>
           </div>
         </div>
       </div>
