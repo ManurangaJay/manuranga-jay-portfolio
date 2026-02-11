@@ -1,4 +1,3 @@
-import React from "react";
 import { FaDownload } from "react-icons/fa";
 
 const About = () => {
@@ -18,7 +17,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white dark:bg-slate-800 transition-colors duration-300">
+    <section
+      id="about"
+      className="py-20 bg-white dark:bg-slate-800 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-blue-600 dark:text-blue-400 font-semibold tracking-wider uppercase">
@@ -86,7 +88,7 @@ const About = () => {
               </div>
             </div>
 
-             <a
+            <a
               href="/Manuranga_Jayawardhana - Resume.pdf"
               download="Manuranga_Jayawardhana_Resume.pdf"
               className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
