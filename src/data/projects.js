@@ -77,7 +77,7 @@ export const projects = [
       "Real-Time Observability: Implemented comprehensive system monitoring using Spring Boot Actuator, Prometheus, and Grafana to track JVM memory, CPU load, and API latency in real-time.",
       "Performance Benchmarking: Stress-tested the system using k6, successfully processing 39,300+ orders in 50 seconds (760+ TPS) with a 0.00% failure rate under local hardware constraints."
     ],
-    image: "/BlitzScale.png",
+    image: "/BlitzScale.jpg",
     techStack: [
       "Java",
       "Spring Boot",
