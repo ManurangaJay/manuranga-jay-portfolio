@@ -67,6 +67,37 @@ export const projects = [
   },
   {
     id: 2,
+    title: "BlitzScale | High-Concurrency Flash Sale Engine",
+    description: "Architected a highly concurrent, event-driven microservices platform designed to gracefully handle massive traffic spikes during e-commerce flash sales. The system eliminates database deadlocks and race conditions by decoupling immediate user requests from heavy database writes using asynchronous messaging and distributed caching.",
+    details: [
+      "Event-Driven Architecture: Built an independent microservices ecosystem using Java Spring Boot, orchestrated via Netflix Eureka for service discovery and Spring Cloud Gateway for centralized routing.",
+      "High-Concurrency Handling: Engineered a resilient checkout mechanism utilizing Redis for distributed rate-limiting (Token Bucket) and sub-millisecond atomic stock locking to prevent overselling.",
+      "Asynchronous Processing: Integrated Apache Kafka to transition from synchronous HTTP calls to asynchronous event streaming, acting as a massive shock absorber for downstream PostgreSQL and H2 databases.",
+      "Centralized Security: Secured the API Gateway and underlying services using Keycloak for identity management, enforcing OAuth2 and JWT standards.",
+      "Real-Time Observability: Implemented comprehensive system monitoring using Spring Boot Actuator, Prometheus, and Grafana to track JVM memory, CPU load, and API latency in real-time.",
+      "Performance Benchmarking: Stress-tested the system using k6, successfully processing 39,300+ orders in 50 seconds (760+ TPS) with a 0.00% failure rate under local hardware constraints."
+    ],
+    image: "/BlitzScale.png",
+    techStack: [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "Spring Cloud Gateway",
+      "Netflix Eureka",
+      "Apache Kafka",
+      "Redis",
+      "Keycloak",
+      "PostgreSQL",
+      "Prometheus",
+      "Grafana",
+      "k6",
+      "Docker"
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/ManurangaJay/BlitzScale",
+  },
+  {
+    id: 3,
     title: "Student Log - Management System",
     description:
       "Built a full-stack student management system with CRUD functionality and responsive interface. Improved data management and user experience using modern web technologies.",
@@ -91,7 +122,7 @@ export const projects = [
     githubUrl: "https://github.com/ManurangaJay/Student-Log",
   },
   {
-    id: 3,
+    id: 4,
     title: "Automated Image Captioning System",
     description:
       "Developed and evaluated two deep-learning models (VGG16-LSTM and ResNet50-Transformer) for generating captions from images. Trained on 8,091 images with human-generated captions.",
@@ -119,7 +150,7 @@ export const projects = [
     githubUrl: "https://github.com/ManurangaJay/Image-Caption-Generator",
   },
   {
-    id: 4,
+    id: 5,
     title: "JobHub - Job Listings API",
     description:
       "Built a REST API for job listings, companies, and reviews with Docker and PostgreSQL. Gained experience in microservices architecture with ongoing frontend integration.",
@@ -145,7 +176,7 @@ export const projects = [
     githubUrl: "#",
   },
   {
-    id: 5,
+    id: 6,
     title: "CinemaSphere - Movie Review App",
     description:
       "Built a movie review app with decoupled architecture for scalable client-server interaction. Gained experience in full-stack development with modern technologies.",
@@ -171,7 +202,7 @@ export const projects = [
     githubUrl: "https://github.com/ManurangaJay/CinemaSphere",
   },
   {
-    id: 6,
+    id: 7,
     title: "University Exam Hall Booking System",
     description:
       "Developed an Exam Hall Booking System with user management and Outlook integration. Contributed to frontend development using React.js and .NET integration.",
@@ -200,7 +231,7 @@ export const projects = [
     githubUrl: "https://github.com/ManurangaJay/ExamHallBookingSystem",
   },
   {
-    id: 7,
+    id: 8,
     title: "Decentralized Vehicle History System",
     description:
       "Final Year Research Project: Developing a blockchain-based system for secure, tamper-proof vehicle history tracking, ensuring data immutability, traceability, and fraud prevention.",
